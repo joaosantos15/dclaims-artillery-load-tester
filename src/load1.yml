@@ -2,9 +2,14 @@ config:
   target: "http://localhost:8000"
   phases:
     - duration: 10
-      arrivalRate: 5
+      arrivalRate: 2
+  payload:
+      # path is relative to the location of the test script
+      path: "generatedFiles/test.csv"
+      fields:
+        - "ipfs"
 scenarios:
   - name: "Search and buy"
     flow:
       - get:
-          url: "/issueipfs?id=3&claim=QmYd2PKzaSJQqmsVSGRvKZpfrtp2GUKBokujAz52GypaSP"
+          url: "/issueipfs?id=3&claim={{ ipfs }}"
