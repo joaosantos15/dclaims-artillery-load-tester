@@ -1,0 +1,10 @@
+config:
+  target: "http://localhost:8000"
+  phases:
+    - duration: 10
+      arrivalRate: 5
+scenarios:
+  - name: "Search and buy"
+    flow:
+      - get:
+          url: "/issueipfs?id=3&claim=QmYd2PKzaSJQqmsVSGRvKZpfrtp2GUKBokujAz52GypaSP"

@@ -1,0 +1,20 @@
+{
+  "name": "hypercerts-artillery-load-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "hypercerts-core": "^1.4.0",
+    "hypercerts-news-claims": "^1.0.3",
+    "ipfs-api": "^20.0.1",
+    "randomstring": "^1.1.5",
+    "sleep": "^5.1.1"
+  }
+}
