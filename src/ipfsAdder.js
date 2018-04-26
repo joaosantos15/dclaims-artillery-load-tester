@@ -7,7 +7,7 @@ var ipfsAPI = require('ipfs-api')
 // connect to ipfs daemon API server
 var ipfs = ipfsAPI('localhost', '5001', {protocol: 'http'}) // leaving out the arguments will default to these values
 
-let NUMBER = 3
+let NUMBER = 1000
 var results = []
 var ipfsLinks = []
 

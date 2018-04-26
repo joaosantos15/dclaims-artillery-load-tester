@@ -1,8 +1,8 @@
 config:
-  target: "http://localhost:8000"
+  target: "http://ec2-34-244-124-92.eu-west-1.compute.amazonaws.com:8000"
   phases:
-    - duration: 10
-      arrivalRate: 2
+    - duration: 60
+      arrivalRate: 50
   payload:
       # path is relative to the location of the test script
       path: "generatedFiles/test.csv"
